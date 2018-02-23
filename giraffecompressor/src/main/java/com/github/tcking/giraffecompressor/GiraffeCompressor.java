@@ -45,7 +45,7 @@ public abstract class GiraffeCompressor {
             return new FFMPEGVideoCompressor();
         } else {
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-                return new LollipopMediaCodecVideoCompressor();
+                return new JellyMediaCodecVideoCompressor();
             } else if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN_MR2) {
                 return new JellyMediaCodecVideoCompressor();
             } else {
